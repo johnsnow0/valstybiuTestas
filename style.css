@@ -1,0 +1,36 @@
+
+.general {
+    background: url('/internetoTestas/img/background.png') no-repeat;
+    
+}
+.one {
+    background-color:rgba(119, 196, 243, 0.8);
+    margin-top:25%;
+
+}
+
+.mygtukas {
+    margin-left: 50%;
+}
+.formatasCentras {
+    text-align:center;
+        
+}
+
+.two {
+    display: block;
+    background-color:rgba(119, 196, 243, 0.8);
+}
+
+#pradinis{
+    display: block;
+}
+#rekvizitai{
+    display: none;
+}
+
+.three {
+
+    display: none;
+}
+

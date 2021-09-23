@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valstybių testas</title>
+</head>
+
+<body class="general">
+
+    <div id="pradinis" class="one">
+        <h1 class="formatasCentras">Sveiki atvykę į valstybių sostinių puslapį</h1>
+        <h3 class="formatasCentras">Čia galite pasitikrinti savo sostinių žinias</h3>
+        <button class="mygtukas" onclick="registracija()">Pradėti</button>
+    </div>
+
+    <div id="rekvizitai" class="two">
+        <h3 class="formatasCentras">Užpildykite registracijos duomenis</h3>
+
+        <div>
+            <form action="/testas.html">
+                <label for="fname">Vardas</label>
+                <input type="text" id="fname" name="firstname" placeholder="Jūsų vardas...">
+
+                <label for="email">El.paštas</label>
+                <input type="text" id="email" name="email" placeholder="El. pašto adresas...">
+
+                <label for="country">Šalis</label>
+                <select id="country" name="country">
+                    <option value="lietuva">Lietuva</option>
+                    <option value="amerika">Amerika</option>
+                    <option value="ispanija">Ispanija</option>
+                </select>
+
+                <input type="submit" value="Pradėti testą">
+            </form>
+        </div>
+    </div>
+
+    <div class="three">
+        <p id="demo"></p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
