@@ -1,36 +1,125 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size:17px;
+    line-height:1.6;
+    font-family:Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height:70vh;
+}
 
 .general {
-    background: url('/internetoTestas/img/background.png') no-repeat;
-    
-}
-.one {
-    background-color:rgba(119, 196, 243, 0.8);
-    margin-top:25%;
-
-}
-
-.mygtukas {
-    margin-left: 50%;
-}
-.formatasCentras {
-    text-align:center;
+    background: url('img/background.png') no-repeat center center fixed;
+    background-size: cover;
         
 }
-
-.two {
-    display: block;
-    background-color:rgba(119, 196, 243, 0.8);
+.pagrindinis {
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 
+.pirmasBlokas {
+    background-color:rgba(119, 196, 243, 0.8);
+    background-size: cover;
+    
+
+}
+.pirmasBlokas h1 {
+    font-size:40px;
+    text-transform: capitalize;
+}
+.pirmasBlokas h3 {
+    font-size:20px;
+}
+ 
+.pirmasBlokas button {
+    justify-content:center;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.pirmasBlokas button:hover {
+    color:red;
+    background-color:black;
+}
+.antrasBlokas {
+    display: block;
+    background-color:rgba(119, 196, 243, 0.8);
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.antrasBlokas button{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    border: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.antrasBlokas button:hover {
+    color:red;
+    background-color:black;
+}
 #pradinis{
     display: block;
 }
 #rekvizitai{
     display: none;
 }
+#taimeris {
+    display:none;
+}
+#testas{
+    display:none;
+}
+.taimerioBlokas {
 
-.three {
-
-    display: none;
+    background-color:rgba(119, 196, 243, 0.8);
+    background-size: cover;
+    height: 7vh;
+    width: 12vh;
+    border:none;
+    padding: 2px;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    align-items: right;
+    text-align: center;
+    color:tomato;
+    font-size:30px;
+}
+.testoBlokas {
+    background-color:rgba(119, 196, 243, 0.8);
+    background-size: cover;
+    height: 10vh;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
 }
 

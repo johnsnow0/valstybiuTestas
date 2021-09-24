@@ -11,14 +11,16 @@
 
 <body class="general">
 
-    <div id="pradinis" class="one">
-        <h1 class="formatasCentras">Sveiki atvykę į valstybių sostinių puslapį</h1>
-        <h3 class="formatasCentras">Čia galite pasitikrinti savo sostinių žinias</h3>
-        <button class="mygtukas" onclick="registracija()">Pradėti</button>
+<div class="pagrindinis">
+    
+    <div id="pradinis" class="pirmasBlokas">
+        <h1> Auksinis protas - valstybių sostinės</h1>
+        <h3>Čia galite pasitikrinti savo sostinių žinias</h3>
+        <button id="regBut" onclick="pradeti()">Pradėti</button>
     </div>
 
-    <div id="rekvizitai" class="two">
-        <h3 class="formatasCentras">Užpildykite registracijos duomenis</h3>
+    <div id="rekvizitai" class="antrasBlokas">
+        <h3>Užpildykite registracijos duomenis</h3>
 
         <div>
             <form action="/testas.html">
@@ -26,7 +28,7 @@
                 <input type="text" id="fname" name="firstname" placeholder="Jūsų vardas...">
 
                 <label for="email">El.paštas</label>
-                <input type="text" id="email" name="email" placeholder="El. pašto adresas...">
+                <input type="email" id="email" name="email" placeholder="El. pašto adresas...">
 
                 <label for="country">Šalis</label>
                 <select id="country" name="country">
@@ -35,15 +37,23 @@
                     <option value="ispanija">Ispanija</option>
                 </select>
 
-                <input type="submit" value="Pradėti testą">
+                <!-- <input type="submit" id="startTest" class="mygtukas" onclick="testas()" value="Pradėti testą"> -->
             </form>
+
         </div>
+        <button id="testBut" onclick="pradeti()">Pradėti testą</button>
     </div>
 
-    <div class="three">
-        <p id="demo"></p>
+    <div class="taimerioBlokas">
+        <p id="taimeris"></p>
     </div>
 
+    <div id="testas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės xxxx sostinė?</h2>
+        <button>Atgal</button>
+        <button>Pirmyn</button>
+    </div>
+</div>
 </body>
 <script src="script.js"></script>
 
