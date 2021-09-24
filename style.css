@@ -21,11 +21,18 @@ body {
     display: flex;
     justify-content:center;
     align-items: center;
+    width: 100%;
+    flex-direction: column;
 }
 
 .pirmasBlokas {
     background-color:rgba(119, 196, 243, 0.8);
     background-size: cover;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     
 
 }
@@ -45,6 +52,16 @@ body {
     cursor: pointer;
     background-color: transparent;
 }
+
+.button {
+    margin: 15px 0;
+    border: 2px solid greenyellow;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
 .pirmasBlokas button:hover {
     color:red;
     background-color:black;
@@ -54,11 +71,12 @@ body {
     background-color:rgba(119, 196, 243, 0.8);
     background-size: cover;
     height: 20vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
 .antrasBlokas button{
     margin: 15px 0;
@@ -72,46 +90,36 @@ body {
     color:red;
     background-color:black;
 }
-#pradinis{
-    display: block;
-}
-#rekvizitai{
-    display: none;
-}
-#taimeris {
-    display:none;
-}
-#testas{
-    display:none;
-}
+
 .taimerioBlokas {
 
     background-color:rgba(119, 196, 243, 0.8);
     background-size: cover;
     height: 7vh;
     width: 12vh;
-    border:none;
-    padding: 2px;
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-end;
-    align-items: right;
-    text-align: center;
-    color:tomato;
+    color:rgb(0, 0, 0);
     font-size:30px;
+    position: absolute;
+    float: right;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .testoBlokas {
+    display: block;
     background-color:rgba(119, 196, 243, 0.8);
     background-size: cover;
-    height: 10vh;
-    font-size: 18px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    border: rgb(0, 0, 0);
-    padding: 10px 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: transparent;
+    height: 20vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
-
+.testoBlokas button:hover {
+    color:red;
+    background-color:black;
+}

@@ -23,7 +23,7 @@
         <h3>Užpildykite registracijos duomenis</h3>
 
         <div>
-            <form action="/testas.html">
+            <form>
                 <label for="fname">Vardas</label>
                 <input type="text" id="fname" name="firstname" placeholder="Jūsų vardas...">
 
@@ -36,8 +36,7 @@
                     <option value="amerika">Amerika</option>
                     <option value="ispanija">Ispanija</option>
                 </select>
-
-                <!-- <input type="submit" id="startTest" class="mygtukas" onclick="testas()" value="Pradėti testą"> -->
+                
             </form>
 
         </div>
@@ -45,13 +44,227 @@
     </div>
 
     <div class="taimerioBlokas">
-        <p id="taimeris"></p>
+        <p id="taimeris">23 sek</p>
     </div>
 
-    <div id="testas" class="testoBlokas">
-        <h2>Kuri iš čia išvardintų yra valstybės xxxx sostinė?</h2>
-        <button>Atgal</button>
-        <button>Pirmyn</button>
+    <div id="1klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Angola sostinė?</h2>
+        <div>
+            <input type="radio" id="Luanda" name="1klausimas" value="Luanda"
+                   checked>
+            <label for="Luanda">Luanda</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="Dewey" name="1klausimas" value="Dewey">
+            <label for="Dewey">Dewey</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="mazura" name="1klausimas" value="mazura">
+            <label for="mazura">Mazura</label>
+          </div>
+                    
+        <button id="atgalPradzia" class="button">Atgal</button>
+        <button class="button" onclick="eitii(2)">Pirmyn</button>
+    </div>
+
+    <div id="2klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Antigva ir Barbuda sostinė?</h2>
+        <div>
+            <input type="radio" id="eriteja" name="2klausimas" value="eriteja"
+                   checked>
+            <label for="Luanda">Eritėja</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="SentDžonsas" name="2klausimas" value="SentDžonsas">
+            <label for="SentDžonsas">Sent Džonsas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="pangeja" name="2klausimas" value="pangeja">
+            <label for="pangeja">Pangėja</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(2)">Atgal</button>
+        <button class="button" onclick="eitii(3)">Pirmyn</button>
+    </div>
+
+    <div id="3klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Bahamos sostinė?</h2>
+        <div>
+            <input type="radio" id="eriteja" name="3klausimas" value="eriteja"
+                   checked>
+            <label for="Luanda">Eritėja</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="SentDžonsas" name="3klausimas" value="SentDžonsas">
+            <label for="SentDžonsas">Sent Džonsas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="nasau" name="3klausimas" value="nasau">
+            <label for="nasau">Nasau</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(3)">Atgal</button>
+        <button class="button" onclick="eitii(4)">Pirmyn</button>
+    </div>
+
+    <div id="4klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Bahreinas sostinė?</h2>
+        <div>
+            <input type="radio" id="menama" name="4klausimas" value="menama"
+                   checked>
+            <label for="menama">Menama</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="SentDžonsas" name="4klausimas" value="SentDžonsas">
+            <label for="SentDžonsas">Sent Džonsas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="bisau" name="4klausimas" value="bisau">
+            <label for="bisau">Bisau</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(4)">Atgal</button>
+        <button class="button" onclick="eitii(5)">Pirmyn</button>
+    </div>
+
+    <div id="5klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Bangladešas sostinė?</h2>
+        <div>
+            <input type="radio" id="gaboronas" name="5klausimas" value="gaboronas"
+                   checked>
+            <label for="gaboronas">Gaboronas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="daka" name="5klausimas" value="daka">
+            <label for="daka">Daka</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="timpu" name="5klausimas" value="timpu">
+            <label for="timpu">Timpu</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(5)">Atgal</button>
+        <button class="button" onclick="eitii(6)">Pirmyn</button>
+    </div>
+
+    <div id="6klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Barbadosas sostinė?</h2>
+        <div>
+            <input type="radio" id="akra" name="6klausimas" value="akra"
+                   checked>
+            <label for="akra">Akra</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="daka" name="6klausimas" value="daka">
+            <label for="daka">Brìdžtaunas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="ugandugu" name="6klausimas" value="ugandugu">
+            <label for="ugandugu">Ugandugu</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(6)">Atgal</button>
+        <button class="button" onclick="eitii(7)">Pirmyn</button>
+    </div>
+
+    <div id="7klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Belizas sostinė?</h2>
+        <div>
+            <input type="radio" id="suva" name="7klausimas" value="suva"
+                   checked>
+            <label for="suva">Suva</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="bangis" name="7klausimas" value="bangis">
+            <label for="bangis">Bangis</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="nasau" name="7klausimas" value="nasau">
+            <label for="nasau">Belmopanas</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(7)">Atgal</button>
+        <button class="button" onclick="eitii(8)">Pirmyn</button>
+    </div>
+
+    <div id="8klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Beninas sostinė?</h2>
+        <div>
+            <input type="radio" id="bandzulis" name="8klausimas" value="bandzulis"
+                   checked>
+            <label for="bandzulis">Bandzulis</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="kerina" name="8klausimas" value="kerina">
+            <label for="kerina">Kerina</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="portonovas" name="8klausimas" value="portonovas">
+            <label for="portonovas">Porto Novas</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(8)">Atgal</button>
+        <button class="button" onclick="eitii(9)">Pirmyn</button>
+    </div>
+
+    <div id="9klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Bostvana sostinė?</h2>
+        <div>
+            <input type="radio" id="libervilis" name="9klausimas" value="libervilis"
+                   checked>
+            <label for="libervilis">Libervilis</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="gaboronas" name="9klausimas" value="gaboronas">
+            <label for="gaboronas">Gaboronas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="niga" name="9klausimas" value="niga">
+            <label for="niga">Niga</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(9)">Atgal</button>
+        <button class="button" onclick="eitii(10)">Pirmyn</button>
+    </div>
+
+    <div id="10klausimas" class="testoBlokas">
+        <h2>Kuri iš čia išvardintų yra valstybės Burundis sostinė?</h2>
+        <div>
+            <input type="radio" id="burkinafasas" name="10klausimas" value="burkinafasas"
+                   checked>
+            <label for="burkinafasas">Burkina Fasas</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="gajana" name="10klausimas" value="gajana">
+            <label for="gajana">Gajana</label>
+          </div>
+          
+          <div>
+            <input type="radio" id="gitega" name="10klausimas" value="gitega">
+            <label for="gitega">Gitega</label>
+          </div>
+                    
+        <button class="button" onclick="eitiAtgal(9)">Atgal</button>
+        <button class="button" onclick="eitii()">Rezultatai</button>
     </div>
 </div>
 </body>
