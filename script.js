@@ -126,7 +126,7 @@ function eitiAtgal(klausimas) {
 
   function patikra() {
    var c=0;
-   var q1=document.getElementById("1klausimas").getElementsByTagName("1klausimas")
+   var q1=document.getElementById("1klausimas")
    if (q1=="Luanda") {c++}
   document.write(c)}
   
