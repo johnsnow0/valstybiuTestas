@@ -74,6 +74,7 @@ function eitii(klausimas) {
   if (klausimas == rezultatai) {
     rezultatai.style.display = "block"
     kl10.style.display = "none"
+    patikra();
   }
 }
 
@@ -125,8 +126,6 @@ function eitiAtgal(klausimas) {
     kl9.style.display = "block"
     kl10.style.display = "none"
   }
-  
-
   }
 
   function patikra() {
@@ -153,6 +152,7 @@ function eitiAtgal(klausimas) {
   if (q9.checked) {c++}
   if (q10.checked) {c++}
 
+document.getElementById("taskai").innerText=c;
 
-  document.write(c)}
+  }
   
