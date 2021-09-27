@@ -85,40 +85,48 @@ function eitiAtgal(klausimas) {
   var kl9 = document.getElementById("9klausimas");
   var kl10 = document.getElementById("10klausimas");
 
-  if (klausimas == 2) {
+  if (klausimas == 1) {
     kl1.style.display = "block"
     kl2.style.display = "none"
   }
-  if (klausimas == 3) {
+  if (klausimas == 2) {
     kl2.style.display = "block"
     kl3.style.display = "none"
   }
-  if (klausimas == 4) {
+  if (klausimas == 3) {
     kl3.style.display = "block"
     kl4.style.display = "none"
   }
-  if (klausimas == 5) {
+  if (klausimas == 4) {
     kl4.style.display = "block"
     kl5.style.display = "none"
   }
-  if (klausimas == 6) {
+  if (klausimas == 5) {
     kl5.style.display = "block"
     kl6.style.display = "none"
   }
-  if (klausimas == 7) {
+  if (klausimas == 6) {
     kl6.style.display = "block"
     kl7.style.display = "none"
   }
-  if (klausimas == 8) {
+  if (klausimas == 7) {
     kl7.style.display = "block"
     kl8.style.display = "none"
   }
-  if (klausimas == 9) {
+  if (klausimas == 8) {
     kl8.style.display = "block"
     kl9.style.display = "none"
   }
-  if (klausimas == 10) {
+  if (klausimas == 9) {
     kl9.style.display = "block"
     kl10.style.display = "none"
   }
-}
+
+  }
+
+  function patikra() {
+   var c=0;
+   var q1=document.getElementById("1klausimas").getElementsByTagName("1klausimas")
+   if (q1=="Luanda") {c++}
+  document.write(c)}
+  
