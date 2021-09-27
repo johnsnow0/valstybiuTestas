@@ -164,8 +164,8 @@
           </div>
           
           <div>
-            <input type="radio" id="daka" name="6klausimas" value="daka">
-            <label for="daka">Brìdžtaunas</label>
+            <input type="radio" id="Bridztaunas" name="6klausimas" value="Bridztaunas">
+            <label for="Bridztaunas">Brìdžtaunas</label>
           </div>
           
           <div>
@@ -191,8 +191,8 @@
           </div>
           
           <div>
-            <input type="radio" id="nasau" name="7klausimas" value="nasau">
-            <label for="nasau">Belmopanas</label>
+            <input type="radio" id="Belmopanas" name="7klausimas" value="Belmopanas">
+            <label for="Belmopanas">Belmopanas</label>
           </div>
                     
         <button class="button" onclick="eitiAtgal(6)">Atgal</button>
@@ -262,8 +262,17 @@
           </div>
                     
         <button class="button" onclick="eitiAtgal(9)">Atgal</button>
-        <button class="button" onclick="patikra()">Rezultatai</button>
+        <button class="button" onclick="eitii(rezultatai)">Rezultatai</button>
     </div>
+    
+    <div id="rezultatai" class="testoBlokas">
+       <h1>Sveikiname pabaigus testą ir išmokus kažką naujo</h1>
+       <h3>Jūsų testo rezultatai yra: </h3>
+       <h3><script>patikra();</script></h3>
+       <button class="button" onclick="parent.location='index.html'">Pradėti iš naujo</button>
+    </div>
+
+
 </div>
 </body>
 <script src="script.js"></script>

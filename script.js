@@ -71,6 +71,10 @@ function eitii(klausimas) {
     kl9.style.display = "none"
     kl10.style.display = "block"
   }
+  if (klausimas == rezultatai) {
+    rezultatai.style.display = "block"
+    kl10.style.display = "none"
+  }
 }
 
 function eitiAtgal(klausimas) {
@@ -121,12 +125,34 @@ function eitiAtgal(klausimas) {
     kl9.style.display = "block"
     kl10.style.display = "none"
   }
+  
 
   }
 
   function patikra() {
    var c=0;
-   var q1=document.getElementById("1klausimas")
-   if (q1=="Luanda") {c++}
+   var q1=document.getElementById("Luanda")
+   var q2=document.getElementById("SentDžonsas")
+   var q3=document.getElementById("nasau")
+   var q4=document.getElementById("menama")
+   var q5=document.getElementById("daka")
+   var q6=document.getElementById("Bridztaunas")
+   var q7=document.getElementById("Belmopanas")
+   var q8=document.getElementById("portonovas")
+   var q9=document.getElementById("gaboronas")
+   var q10=document.getElementById("gitega")
+
+  if (q1.checked) {c++}
+  if (q2.checked) {c++}
+  if (q3.checked) {c++}
+  if (q4.checked) {c++}
+  if (q5.checked) {c++}
+  if (q6.checked) {c++}
+  if (q7.checked) {c++}
+  if (q8.checked) {c++}
+  if (q9.checked) {c++}
+  if (q10.checked) {c++}
+
+
   document.write(c)}
   
