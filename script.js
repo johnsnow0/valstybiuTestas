@@ -154,5 +154,11 @@ function eitiAtgal(klausimas) {
 
 document.getElementById("taskai").innerText=c;
 
+if (c<5){
+    document.getElementById("rezBlogas").innerText=("Testas neislaikytas");
+  }
+  else {
+    document.getElementById("rezGeras").innerText=("Testas islaikytas");
+  }
   }
   
