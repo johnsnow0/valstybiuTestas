@@ -44,7 +44,7 @@
     </div>
 
     <div class="taimerioBlokas">
-        <p id="taimeris">23 sek</p>
+        <p id="taimeris">19:59</p>
     </div>
 
     <div id="1klausimas" class="testoBlokas">
@@ -268,7 +268,7 @@
     <div id="rezultatai" class="testoBlokas">
        <h1>Sveikiname pabaigus testą ir išmokus kažką naujo</h1>
        <h3>Jūsų testo rezultatai yra: </h3>
-       <h3><script>patikra();</script></h3>
+       <h3><script>document.patikra().innerHTML;</script></h3>
        <button class="button" onclick="parent.location='index.html'">Pradėti iš naujo</button>
     </div>
 
